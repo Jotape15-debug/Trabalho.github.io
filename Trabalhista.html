@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Trabalhista</title>
+    <link rel="stylesheet" href="Trabalhista.css">
+</head>
+<body>
+
+    <div class="Usuario">
+        <h1>Cálculo Trabalhista</h1>
+
+        <h2>Antes de tudo, responda às seguintes perguntas:</h2>
+
+        <label>Nome do empregado:</label>
+        <input type="text" id="name" placeholder="Ex: Valmor">
+
+        <label>Informe o valor por hora trabalhada:</label>
+        <input type="text" id="valor" placeholder="Ex: 20">
+
+        <label>Informe a quantidade de horas trabalhadas:</label>
+        <input type="number" id="quantidade" placeholder="Ex: 5">
+
+        <label>Possui algum tipo de Vale Transporte?
+        <input name="VT" type="radio" id="sim" value="sim">Sim
+        <input name="VT" type="radio" id="nao" value="nao">Não</label>
+
+        <label>Tem mais alguma outra dedução?</label>
+        <input id="deducoes" type="text" placeholder="Ex: 100">
+
+        <button onclick="Calcular()">Calcular</button>
+    </div>
+
+    <div class="resultado">
+        <p>Salário Bruto: <span id="Bruto"></span></p>
+        <p>INSS: <span id="INSS"></span></p>
+        <p>IRPF: <span id="IRPF"></span></p>
+        <p>Vale Transporte: <span id="Vt"></span></p>
+        <p>Deduções: <span id="deducoes"></span></p>
+        <p>Salário Líquido: <span id="salarioliquido"></span></p>
+    </div>
+
+    <script src="Trabalhista.js"></script>
+</body>
+</html>
